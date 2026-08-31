@@ -1,5 +1,9 @@
 # Speech Recognition & Translation Toolkit
 
+[![CI](https://github.com/aymendridi1999/Speech-Recognition-and-Translation/actions/workflows/ci.yml/badge.svg)](https://github.com/aymendridi1999/Speech-Recognition-and-Translation/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 A compact Python project that combines speech-to-text, translation, text-to-speech, real-time transcription, and basic audio-frequency analysis in a single reusable toolkit.
 
 ## Features
