@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speech-recognition-translation-toolkit"
+version = "1.0.0"
+description = "A compact Python toolkit for speech recognition, translation, transcription, text-to-speech, and audio analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "aymendridi1999" }
+]
+dependencies = [
+    "SpeechRecognition>=3.12.0",
+    "deep-translator>=1.11.0",
+    "gTTS>=2.5.0",
+    "matplotlib>=3.8.0",
+    "numpy>=1.26.0",
+    "scipy>=1.11.0"
+]
+
+[project.optional-dependencies]
+audio = [
+    "PyAudio>=0.2.11"
+]
+dev = [
+    "pytest>=8.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["speech_toolkit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
